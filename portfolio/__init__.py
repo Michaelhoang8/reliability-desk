@@ -1,0 +1,1 @@
+"""Reliability Desk: standalone application."""

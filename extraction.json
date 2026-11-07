@@ -1,0 +1,36 @@
+{
+  "app": "reliability-desk",
+  "mode": "reliability",
+  "source": "Michaelhoang8/portfolio-lab",
+  "backend_definitions": {
+    "capabilities": [
+      "enrich",
+      "table"
+    ],
+    "data_apps": [
+      "parse",
+      "safe_csv"
+    ],
+    "ml_apps": [
+      "number"
+    ],
+    "validation": [
+      "ConflictError",
+      "NotFoundError",
+      "ValidationError"
+    ],
+    "devops_apps": [
+      "reliability"
+    ],
+    "json_input": [
+      "decode",
+      "read_exact"
+    ],
+    "db": [
+      "SCHEMA",
+      "connect",
+      "initialize",
+      "rows"
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "path": "/api/devops/reliability",
+  "body": {
+    "csv": "timestamp,total,bad\n2026-01-01T00:00:00Z,1000,1\n2026-01-01T01:00:00Z,1000,2\n",
+    "target": 99.9
+  }
+}
