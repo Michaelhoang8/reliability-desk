@@ -4,6 +4,8 @@ Review SLO error budgets, burn rates, missing hours, and historical reliability 
 
 ![Reliability Desk preview](docs/app.png)
 
+The report plots the latest 48 supplied hourly burn rates against elapsed UTC time and a 1× SLO allowance reference. Missing hours remain gaps; zero-request buckets have an undefined-rate marker. Exact hourly values remain in a disclosure. Chart transitions respect reduced-motion preferences.
+
 ## Run
 
 Requires Python 3.11+; no third-party runtime dependencies. Clone this repository and run from its root:

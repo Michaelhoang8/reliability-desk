@@ -88,7 +88,7 @@ window.analysisEmpty = function (mode) {
     evaluate: ['Look beyond accuracy', 'Supply labels and prediction scores to explore errors and threshold tradeoffs.'],
     manifest: ['Review before deployment', 'Load a Deployment manifest to inspect selected configuration policies.'],
     pipeline: ['Make the critical path visible', 'Define jobs and dependencies, then simulate their schedule with limited workers.'],
-    reliability: ['Make your error budget concrete', 'Add hourly request counts and a reliability target to calculate budget consumption.']
+    reliability: ['No reliability report', 'Load hourly request metrics and calculate the reporting-period budget.']
   };
   const [title, description] = copy[mode];
   return `<div class="empty"><span aria-hidden="true">↗</span><h3>${title}</h3><p>${description}</p><button type="button" data-load-example>Load an example</button><small>Then run the analysis · Ctrl+Enter / ⌘+Enter</small></div>`;

@@ -151,3 +151,32 @@ body[data-app] .panel .section-head a{color:var(--blue);font-size:12px;text-unde
 
 body[data-app] button.report-export{background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:3px;padding:9px 13px;font:600 12px/1.5 Arial,sans-serif}
 body[data-app] button.report-export:hover:not(:disabled){background:var(--bg);border-color:var(--blue)}
+body[data-app=reliability]{--bg:#f0f6f7;--paper:#f0f6f7;--ink:#153c49;--muted:#5d7b85;--blue:#087d8d;--line:#cbdfe3;background:var(--bg)}
+body[data-app=reliability] main{max-width:1600px;padding:0 4%}
+body[data-app=reliability] .workspace{display:grid;grid-template-columns:minmax(0,1fr) 285px;gap:32px;margin-top:30px;box-shadow:none}
+body[data-app=reliability] .source{grid-column:2;grid-row:1;border:0;border-left:1px solid var(--line);background:transparent;padding:0 0 0 24px;border-radius:0}
+body[data-app=reliability] .results{grid-column:1;grid-row:1;border:0;background:transparent;padding:0;min-width:0}
+body[data-app=reliability] .stats{margin:26px 0}
+body[data-app=reliability] .stat{padding:0 16px}
+body[data-app=reliability] .stat:first-child{padding-left:0}
+body[data-app=reliability] .stat strong{font:clamp(24px,3vw,40px)/1.5 Georgia,serif;letter-spacing:-1px;overflow-wrap:normal}
+body[data-app=reliability] .summary{background:none;border:0;padding:0;color:var(--muted);font-size:11px}
+body[data-app=reliability] .burn-plot{background:#fff;border:1px solid var(--line);border-radius:8px;padding:24px;margin:24px 0;box-shadow:0 15px 32px #174a5710}
+body[data-app=reliability] .burn-heading{display:flex;align-items:center;justify-content:space-between;gap:16px}
+body[data-app=reliability] .burn-heading h3{font-size:14px;margin:0}
+body[data-app=reliability] .burn-heading span{font-size:10px;color:var(--muted)}
+body[data-app=reliability] .burn-scroll{overflow:auto;margin-top:20px}
+body[data-app=reliability] .burn-scroll svg{display:block;width:100%;min-width:480px}
+body[data-app=reliability] .burn-scroll text{font:10px ui-monospace,monospace;fill:#6a8992}
+body[data-app=reliability] .burn-grid{stroke:#e5eef0}
+body[data-app=reliability] .budget-line{stroke:#a67a45;stroke-dasharray:4 5}
+body[data-app=reliability] .burn-bar{fill:#3b9ba5}
+body[data-app=reliability] .burn-bar.over{fill:#ce8250}
+body[data-app=reliability] .undefined-burn{stroke:#6a8992;stroke-width:1.5}
+body[data-app=reliability] .bucket-table{border-top:1px solid var(--line);margin-top:24px;padding-top:16px}
+body[data-app=reliability] .bucket-table summary{cursor:pointer;font-size:12px}
+body[data-app=reliability] .empty{min-height:420px;margin-top:24px;border:1px dashed var(--line)}
+@media(max-width:950px){body[data-app=reliability] .workspace{grid-template-columns:minmax(0,1fr) 240px;gap:20px}body[data-app=reliability] .stats{gap:6px}body[data-app=reliability] .stat{padding:0 8px}body[data-app=reliability] .stat strong{font-size:25px}}
+@media(max-width:720px){body[data-app=reliability] .workspace{display:block}body[data-app=reliability] .source{border:0;border-bottom:1px solid var(--line);padding:0 0 24px;margin-bottom:24px}body[data-app=reliability] .burn-plot{padding:16px}body[data-app=reliability] .stats{grid-template-columns:1fr;gap:10px}body[data-app=reliability] .stat{border:0;padding:0;display:flex;justify-content:space-between;align-items:center}body[data-app=reliability] .empty{min-height:230px}}
+body[data-app=reliability] .stats{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(max-width:720px){body[data-app=reliability] .stats{grid-template-columns:1fr}}
